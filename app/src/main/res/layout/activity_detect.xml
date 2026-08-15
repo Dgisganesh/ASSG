@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
-
         <!-- Title -->
 
         <TextView
@@ -49,7 +48,6 @@
                 android:contentDescription="Selected plant image"
                 android:scaleType="centerInside"
                 android:src="@drawable/ic_launcher_foreground" />
-
         </LinearLayout>
 
 

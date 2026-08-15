@@ -31,7 +31,6 @@
             android:text="No diagnosis history yet."
             android:textColor="#777777"
             android:textSize="17sp" />
-
     </LinearLayout>
 
 </ScrollView>
