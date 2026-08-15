@@ -31,7 +31,6 @@ public class CropRecommendationActivity extends AppCompatActivity {
     private TextView txtRecommendation;
     private TextView txtReportStatus;
 
-
     // SOIL REPORT FILE PICKER
 
     private final ActivityResultLauncher<String> reportLauncher =
@@ -327,9 +326,7 @@ public class CropRecommendationActivity extends AppCompatActivity {
                             + "Loamy soil with a near-neutral "
                             + "pH is suitable for many crops.";
 
-
         }
-
 
 
         // CLAY SOIL
@@ -351,10 +348,7 @@ public class CropRecommendationActivity extends AppCompatActivity {
 
         }
 
-
-
         // SANDY SOIL
-
 
         else if (soil.equals("Sandy")
                 && ph >= 5.5

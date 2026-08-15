@@ -33,7 +33,6 @@ public class DetectActivity extends AppCompatActivity {
     private Button btnCheckDisease;
 
     private Uri selectedImageUri;
-
     // GALLERY
 
     private final ActivityResultLauncher<String> galleryLauncher =

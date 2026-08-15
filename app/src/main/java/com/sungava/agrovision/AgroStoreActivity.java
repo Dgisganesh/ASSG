@@ -31,10 +31,8 @@ public class AgroStoreActivity extends AppCompatActivity {
                 new WebViewClient()
         );
 
-
         webViewAgroStore.getSettings()
                 .setJavaScriptEnabled(true);
-
 
         webViewAgroStore.loadUrl(
                 "file:///android_asset/agro_store.html"
