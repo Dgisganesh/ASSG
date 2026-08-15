@@ -56,7 +56,6 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-
     private void loginUser() {
 
         String email =
@@ -68,7 +67,6 @@ public class LoginActivity extends AppCompatActivity {
                 etPassword.getText()
                         .toString()
                         .trim();
-
 
         if (email.isEmpty()) {
 
@@ -93,12 +91,11 @@ public class LoginActivity extends AppCompatActivity {
         // DEMO LOGIN
 
         if (email.equals(
-                "demo@plantdoctor.com"
+                "demo@Assg_sungava.com"
         )
                 && password.equals(
                 "123456"
         )) {
-
 
             // Save login status
 
@@ -124,11 +121,9 @@ public class LoginActivity extends AppCompatActivity {
                             MainActivity.class
                     );
 
-
             startActivity(intent);
 
             finish();
-
 
         } else {
 

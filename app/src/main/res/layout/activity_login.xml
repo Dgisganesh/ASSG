@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:text="AI Plant Doctor"
+            android:text="Agro Vision"
             android:textColor="#245C2A"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:gravity="center"
-            android:text="Demo Account\nEmail: demo@plantdoctor.com\nPassword: 123456"
+            android:text="Demo Account\nEmail: demo@Assg_sungava.com\nPassword: 123456"
             android:textColor="#777777"
             android:textSize="14sp" />
 
