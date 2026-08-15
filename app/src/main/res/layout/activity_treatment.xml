@@ -11,7 +11,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="24dp">
-
         <!-- Title -->
 
         <TextView
@@ -22,7 +21,6 @@
             android:textColor="#245C2A"
             android:textSize="28sp"
             android:textStyle="bold" />
-
         <!-- Plant -->
 
         <TextView
