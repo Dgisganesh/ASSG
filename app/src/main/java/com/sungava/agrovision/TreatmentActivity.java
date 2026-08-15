@@ -212,7 +212,6 @@ public class TreatmentActivity extends AppCompatActivity {
                     "Monitor the plant carefully and consult " +
                             "a qualified agricultural professional."
             );
-
             txtChemical.setText(
                     "Do not apply a chemical product until the " +
                             "disease and crop have been properly identified."

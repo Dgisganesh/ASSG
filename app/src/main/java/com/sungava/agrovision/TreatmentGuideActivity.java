@@ -105,7 +105,6 @@ public class TreatmentGuideActivity extends AppCompatActivity {
                         showTreatment(disease);
                     }
 
-
                     @Override
                     public void onNothingSelected(
                             AdapterView<?> parent) {
@@ -134,7 +133,6 @@ public class TreatmentGuideActivity extends AppCompatActivity {
 
             return;
         }
-
 
         txtSelectedDisease.setText(
                 "Treatment: " + disease
