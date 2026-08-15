@@ -314,7 +314,6 @@ public class ExpertChatActivity extends AppCompatActivity {
                         "and its symptoms.";
     }
 
-
     private void scrollToBottom() {
 
         chatScroll.post(() -> {

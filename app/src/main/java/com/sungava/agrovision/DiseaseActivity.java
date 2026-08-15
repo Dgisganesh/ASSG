@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class DiseaseActivity extends AppCompatActivity {
 
     private RadioGroup radioDiseases;
-
     private TextView txtPlant;
 
     private ImageView imgPlantPreview;

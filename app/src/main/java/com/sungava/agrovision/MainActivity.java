@@ -160,7 +160,6 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-
         // Settings
 
         cardSettings.setOnClickListener(v -> {
@@ -205,7 +204,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent.FLAG_ACTIVITY_NEW_TASK
                         | Intent.FLAG_ACTIVITY_CLEAR_TASK
         );
-
 
         startActivity(intent);
 

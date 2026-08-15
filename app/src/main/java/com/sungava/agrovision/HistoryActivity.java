@@ -22,7 +22,6 @@ public class HistoryActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_history);
 
-
         historyContainer =
                 findViewById(R.id.historyContainer);
 
@@ -123,7 +122,6 @@ public class HistoryActivity extends AppCompatActivity {
                     0,
                     0
             );
-
 
             historyContainer.addView(
                     historyItem,
