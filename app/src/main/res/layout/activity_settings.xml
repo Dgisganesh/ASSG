@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FFF3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="⚙️ Settings"
+            android:textColor="#245C2A"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+        <!-- Language -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="🌐 Language"
+            android:textColor="#245C2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp" />
+
+
+        <!-- Voice -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="🔊 Voice Explanation"
+            android:textColor="#245C2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switchVoice"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Enable voice explanation"
+            android:textSize="17sp" />
+
+
+        <!-- Notifications -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="📳 Notifications"
+            android:textColor="#245C2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switchNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Enable notifications"
+            android:textSize="17sp" />
+
+
+        <!-- About -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="ℹ️ About"
+            android:textColor="#245C2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:text="AI Plant Doctor&#10;&#10;A hackathon project designed to help farmers identify common plant diseases and find simple treatment guidance.&#10;&#10;Our app allows users to take a plant photo or select an image from the gallery, view a demo disease diagnosis, check disease severity, and explore organic and chemical treatment options.&#10;&#10;👨‍💻 Our Team&#10;&#10;Anjila Hatuwal&#10;Samir Pathak&#10;Ganesh Sapkota&#10;Soni Tamang&#10;&#10;College: Sungava College &#10;&#10;Project: Hackathon 2026&#10;Version: 1.0 Demo&#10;&#10;🌿 Our Goal&#10;&#10;Our goal is to use technology to make plant health information easier and more accessible for farmers.&#10;&#10;Made with teamwork, learning, and innovation. 🌱"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

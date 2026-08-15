@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5FFF3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="🌿 Treatment Guide"
+            android:textColor="#245C2A"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Plant -->
+
+        <TextView
+            android:id="@+id/txtTreatmentPlant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Plant: Tomato"
+            android:textColor="#245C2A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Disease -->
+
+        <TextView
+            android:id="@+id/txtTreatmentDisease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Disease: Early Blight"
+            android:textColor="#555555"
+            android:textSize="18sp" />
+
+        <!-- Organic -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="🌿 Organic Treatment"
+            android:textColor="#245C2A"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtOrganic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Organic treatment information"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+        <!-- Chemical -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="🧪 Chemical Treatment"
+            android:textColor="#245C2A"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtChemical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Chemical treatment information"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+        <!-- Safety -->
+
+        <TextView
+            android:id="@+id/txtSafety"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="15dp"
+            android:background="#FFF3CD"
+            android:text="⚠️ Always follow the product label and local agricultural guidance. Use protective equipment when required."
+            android:textColor="#6B5200"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>
