@@ -34,10 +34,7 @@ public class DetectActivity extends AppCompatActivity {
 
     private Uri selectedImageUri;
 
-
-    // ==============================
     // GALLERY
-    // ==============================
 
     private final ActivityResultLauncher<String> galleryLauncher =
             registerForActivityResult(
@@ -53,10 +50,8 @@ public class DetectActivity extends AppCompatActivity {
                     }
             );
 
-
-    // ==============================
     // CAMERA
-    // ==============================
+
 
     private final ActivityResultLauncher<Void> cameraLauncher =
             registerForActivityResult(
@@ -74,9 +69,8 @@ public class DetectActivity extends AppCompatActivity {
             );
 
 
-    // ==============================
     // CAMERA PERMISSION
-    // ==============================
+
 
     private final ActivityResultLauncher<String>
             cameraPermissionLauncher =
@@ -100,9 +94,8 @@ public class DetectActivity extends AppCompatActivity {
             );
 
 
-    // ==============================
     // ON CREATE
-    // ==============================
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,9 +107,9 @@ public class DetectActivity extends AppCompatActivity {
         );
 
 
-        // ==============================
+
         // FIND VIEWS
-        // ==============================
+
 
         imgPlant =
                 findViewById(
@@ -144,9 +137,9 @@ public class DetectActivity extends AppCompatActivity {
                 );
 
 
-        // ==============================
+
         // PLANT LIST
-        // ==============================
+
 
         String[] plants = {
 
@@ -156,7 +149,6 @@ public class DetectActivity extends AppCompatActivity {
                 "Rice",
                 "Wheat",
                 "Corn"
-
         };
 
 
@@ -178,9 +170,9 @@ public class DetectActivity extends AppCompatActivity {
         );
 
 
-        // ==============================
+
         // CAMERA CARD
-        // ==============================
+
 
         cardCamera.setOnClickListener(v -> {
 
@@ -200,9 +192,9 @@ public class DetectActivity extends AppCompatActivity {
         });
 
 
-        // ==============================
+
         // GALLERY CARD
-        // ==============================
+
 
         cardGallery.setOnClickListener(v -> {
 
@@ -212,9 +204,9 @@ public class DetectActivity extends AppCompatActivity {
         });
 
 
-        // ==============================
+
         // CHECK DISEASE
-        // ==============================
+
 
         btnCheckDisease.setOnClickListener(v -> {
 
@@ -254,9 +246,9 @@ public class DetectActivity extends AppCompatActivity {
             }
 
 
-            // ==============================
+
             // OPEN DISEASE ACTIVITY
-            // ==============================
+
 
             Intent intent =
                     new Intent(
@@ -281,10 +273,7 @@ public class DetectActivity extends AppCompatActivity {
         });
     }
 
-
-    // ==============================
     // SAVE CAMERA IMAGE
-    // ==============================
 
     private Uri saveBitmapToCache(
             Bitmap bitmap

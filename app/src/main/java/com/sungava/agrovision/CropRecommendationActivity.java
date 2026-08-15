@@ -32,9 +32,7 @@ public class CropRecommendationActivity extends AppCompatActivity {
     private TextView txtReportStatus;
 
 
-    // ==========================================
     // SOIL REPORT FILE PICKER
-    // ==========================================
 
     private final ActivityResultLauncher<String> reportLauncher =
             registerForActivityResult(
@@ -58,10 +56,8 @@ public class CropRecommendationActivity extends AppCompatActivity {
                     }
             );
 
-
-    // ==========================================
     // ON CREATE
-    // ==========================================
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,9 +69,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         );
 
 
-        // ==========================================
+
         // FIND VIEWS
-        // ==========================================
+
 
         spinnerSoil =
                 findViewById(
@@ -128,9 +124,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
                 );
 
 
-        // ==========================================
+
         // SOIL TYPE LIST
-        // ==========================================
+
 
         String[] soilTypes = {
 
@@ -161,9 +157,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         );
 
 
-        // ==========================================
+
         // UPLOAD SOIL REPORT
-        // ==========================================
+
 
         btnUploadSoilReport.setOnClickListener(v -> {
 
@@ -172,9 +168,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         });
 
 
-        // ==========================================
+
         // RECOMMEND CROP BUTTON
-        // ==========================================
+
 
         btnRecommend.setOnClickListener(v -> {
 
@@ -185,9 +181,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
     }
 
 
-    // ==========================================
+
     // CROP RECOMMENDATION
-    // ==========================================
+
 
     private void recommendCrop() {
 
@@ -213,9 +209,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         }
 
 
-        // ==========================================
+
         // GET INPUT VALUES
-        // ==========================================
+
 
         String phText =
                 etPh.getText()
@@ -247,9 +243,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
                         .trim();
 
 
-        // ==========================================
+
         // CHECK EMPTY VALUES
-        // ==========================================
+
 
         if (phText.isEmpty()
                 || nitrogenText.isEmpty()
@@ -267,9 +263,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         }
 
 
-        // ==========================================
+
         // CONVERT TEXT TO NUMBERS
-        // ==========================================
+
 
         double ph;
         double nitrogen;
@@ -307,16 +303,16 @@ public class CropRecommendationActivity extends AppCompatActivity {
         }
 
 
-        // ==========================================
+
         // RECOMMENDATION
-        // ==========================================
+
 
         String recommendation;
 
 
-        // ==========================================
+
         // LOAMY SOIL
-        // ==========================================
+
 
         if (soil.equals("Loamy")
                 && ph >= 6.0
@@ -335,9 +331,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         }
 
 
-        // ==========================================
+
         // CLAY SOIL
-        // ==========================================
+
 
         else if (soil.equals("Clay")
                 && ph >= 5.5
@@ -356,9 +352,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         }
 
 
-        // ==========================================
+
         // SANDY SOIL
-        // ==========================================
+
 
         else if (soil.equals("Sandy")
                 && ph >= 5.5
@@ -375,9 +371,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         }
 
 
-        // ==========================================
+
         // SILTY SOIL
-        // ==========================================
+
 
         else if (soil.equals("Silty")
                 && ph >= 6.0
@@ -395,9 +391,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         }
 
 
-        // ==========================================
+
         // DEFAULT
-        // ==========================================
+
 
         else {
 
@@ -411,9 +407,9 @@ public class CropRecommendationActivity extends AppCompatActivity {
         }
 
 
-        // ==========================================
+
         // SHOW RESULT
-        // ==========================================
+
 
         txtRecommendation.setText(
                 recommendation
