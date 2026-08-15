@@ -292,7 +292,6 @@ public class TreatmentGuideActivity extends AppCompatActivity {
 
         }
 
-
         else if (disease.equals("Powdery Mildew")) {
 
             txtOrganic.setText(
@@ -312,7 +311,6 @@ public class TreatmentGuideActivity extends AppCompatActivity {
             );
 
         }
-
 
         else if (disease.equals("Corn Leaf Blight")) {
 

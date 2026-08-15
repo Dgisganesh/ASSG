@@ -18,7 +18,6 @@ public class SettingsActivity extends AppCompatActivity {
 
     private SharedPreferences preferences;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -112,7 +111,6 @@ public class SettingsActivity extends AppCompatActivity {
                                 .apply();
                     }
 
-
                     @Override
                     public void onNothingSelected(
                             android.widget.AdapterView<?> parent) {
@@ -120,7 +118,6 @@ public class SettingsActivity extends AppCompatActivity {
                     }
                 }
         );
-
 
         // Load saved settings
 

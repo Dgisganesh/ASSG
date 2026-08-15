@@ -20,15 +20,11 @@ public class ResultActivity extends AppCompatActivity {
     private TextView txtResultDisease;
     private TextView txtSeverity;
     private TextView txtSymptoms;
-
     private ImageView imgResultPlant;
-
     private TextToSpeech textToSpeech;
-
     private String plant;
     private String disease;
     private String imageUriString;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -402,7 +398,6 @@ public class ResultActivity extends AppCompatActivity {
                             "और उपचार की जानकारी देखें.";
         }
 
-
         // 🇬🇧 English
 
         else {
@@ -446,7 +441,6 @@ public class ResultActivity extends AppCompatActivity {
                             disease +
                             ". Please check the treatment information.";
         }
-
 
         textToSpeech.speak(
                 message,
